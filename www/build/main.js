@@ -34,7 +34,7 @@ var AttaquePage = (function () {
     };
     AttaquePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-attaque',template:/*ion-inline-start:"D:\Waar\src\pages\attaque\attaque.html"*/'<!--\n\n  Generated template for the AttaquePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>attaque</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\attaque\attaque.html"*/,
+            selector: 'page-attaque',template:/*ion-inline-start:"D:\Waar\src\pages\attaque\attaque.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-buttons end>\n\n      <button ion-button>\n\n        <!-- bouton option pour accéder aux paramètres du compte -->\n\n        <ion-icon name="options"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>attaque</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Waar\src\pages\attaque\attaque.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], AttaquePage);
@@ -79,7 +79,7 @@ var ClassementPage = (function () {
     };
     ClassementPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-classement',template:/*ion-inline-start:"D:\Waar\src\pages\classement\classement.html"*/'<!--\n\n  Generated template for the ClassementPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>classement</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\classement\classement.html"*/,
+            selector: 'page-classement',template:/*ion-inline-start:"D:\Waar\src\pages\classement\classement.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n      <ion-buttons end>\n\n          <button ion-button>\n\n            <!-- bouton option pour accéder aux paramètres du compte -->\n\n            <ion-icon name="options"></ion-icon>\n\n          </button>\n\n        </ion-buttons>\n\n    <ion-title>classement</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\classement\classement.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], ClassementPage);
@@ -124,7 +124,7 @@ var JournalPage = (function () {
     };
     JournalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-journal',template:/*ion-inline-start:"D:\Waar\src\pages\journal\journal.html"*/'<!--\n\n  Generated template for the JournalPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>journal</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\journal\journal.html"*/,
+            selector: 'page-journal',template:/*ion-inline-start:"D:\Waar\src\pages\journal\journal.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n      <ion-buttons end>\n\n          <button ion-button>\n\n            <!-- bouton option pour accéder aux paramètres du compte -->\n\n            <ion-icon name="options"></ion-icon>\n\n          </button>\n\n        </ion-buttons>\n\n    <ion-title>journal</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\journal\journal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], JournalPage);
@@ -169,7 +169,7 @@ var UpgradePage = (function () {
     };
     UpgradePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-upgrade',template:/*ion-inline-start:"D:\Waar\src\pages\upgrade\upgrade.html"*/'<!--\n\n  Generated template for the UpgradePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>upgrade</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\upgrade\upgrade.html"*/,
+            selector: 'page-upgrade',template:/*ion-inline-start:"D:\Waar\src\pages\upgrade\upgrade.html"*/'<!--\n\n  Generated template for the UpgradePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <ion-buttons end>\n\n          <button ion-button>\n\n            <!-- bouton option pour accéder aux paramètres du compte -->\n\n            <ion-icon name="options"></ion-icon>\n\n          </button>\n\n        </ion-buttons>\n\n    <ion-title>upgrade</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\upgrade\upgrade.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], UpgradePage);
@@ -318,7 +318,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"D:\Waar\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Hey you !</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2>Connexion mamène</h2>\n\n  \n\n  <ion-item>\n\n    <ion-label stacked>Email</ion-label>\n\n    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label stacked>Mot de passe</ion-label>\n\n    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>\n\n  </ion-item>\n\n  \n\n  <button ion-button full (click)="redirectionProvisoire()" >CONNEXION</button> \n\n  <!-- Remplacer le navPush par :  (tap)="login(user, password)" -->\n\n  \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Waar\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"D:\Waar\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Hey you !</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2>Connexion mamène</h2>\n\n\n\n  <ion-item>\n\n    <ion-label stacked>Email</ion-label>\n\n    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label stacked>Mot de passe</ion-label>\n\n    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>\n\n  </ion-item>\n\n\n\n  <!-- Remplacer le (click) par :  (tap)="login(user, password)" -->\n\n  <!-- Todo : connexion automatique ? -->\n\n  <button ion-button full (click)="redirectionProvisoire()">CONNEXION</button>\n\n\n\n  <!-- Bouton non terminé pour s\'inscrire -->\n\n  <button ion-button full (click)="redirectionProvisoire()">Je ne suis malheureusement pas encore inscrit</button>\n\n\n\n<!-- Rajouter quelque chose qui pousse à s\'inscrire (slide ?) sous les boutons -->\n\n</ion-content>'/*ion-inline-end:"D:\Waar\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], LoginPage);
@@ -334,10 +334,10 @@ var LoginPage = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__upgrade_upgrade__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__attaque_attaque__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__classement_classement__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upgrade_upgrade__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__attaque_attaque__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__classement_classement__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__journal_journal__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -356,12 +356,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TabsPage = (function () {
     function TabsPage() {
         this.tab1Root = __WEBPACK_IMPORTED_MODULE_4__journal_journal__["a" /* JournalPage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__attaque_attaque__["a" /* AttaquePage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_1__upgrade_upgrade__["a" /* UpgradePage */];
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_3__classement_classement__["a" /* ClassementPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__attaque_attaque__["a" /* AttaquePage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_0__upgrade_upgrade__["a" /* UpgradePage */];
+        this.tab4Root = __WEBPACK_IMPORTED_MODULE_2__classement_classement__["a" /* ClassementPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Waar\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Journal de bord" tabIcon="paper"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Attaquer" tabIcon="hammer"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Améliorer" tabIcon="build"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Classement" tabIcon="trending-up"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Waar\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Waar\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Journal de bord" tabIcon="paper"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Attaquer" tabIcon="hammer"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Améliorer" tabIcon="build"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Classement" tabIcon="trending-up"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Waar\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
