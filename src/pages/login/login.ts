@@ -1,60 +1,74 @@
 import { Component } from '@angular/core';
-import { NavController, Alert, AlertController } from 'ionic-angular';
-<<<<<<< HEAD:src/pages/home/home.ts
-import { RestProvider } from '../../providers/rest/rest';
-import { NativeStorage } from '@ionic-native/native-storage';
-=======
-import { LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+
 
 import { HttpClient } from '@angular/common/http';
-import { NativeStorage } from '@ionic-native/native-storage';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { LoadingController } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
+import { SignupPage } from '../signup/signup';
 
-import { TabsPage } from './../tabs/tabs';
->>>>>>> origin/master:src/pages/login/login.ts
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
+@IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html'
+  templateUrl: 'login.html',
 })
-<<<<<<< HEAD:src/pages/home/home.ts
-export class HomePage {
-  email: any;
-  pass: any;
-  level: any;
-  exp: any;
-  constructor(public navCtrl: NavController, public Rest: RestProvider, public nativeStorage: NativeStorage) {
-=======
 export class LoginPage {
-
+  signupPage = SignupPage;
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: HttpClient, public nativeStorage: NativeStorage, public alertCtrl: AlertController) {
->>>>>>> origin/master:src/pages/login/login.ts
 
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-    this.nativeStorage.getItem('account')
-    .then(data => { 
-      console.log("Loading storage");
-      this.email = data['email'];
-      this.pass = data['pass'];
-      console.log("Loading storage email : "+this.email);
-      console.log("Email : " + this.email);
-      // REQUETTE HTTP POUR RÉCUPÉRER LES INFOS
-      this.Rest.load(this.email, this.pass).then(data => {
-        console.log("Retour1 : "+ data['DATA']['level']);
-        this.level = data['DATA']['level'];
-        this.exp = data['DATA']['exp'];
-      });
+    console.log('ionViewDidLoad LoginPage');
+  }
+  login(user, password) {
+    // CHARGEMENT ##################################################
+    let loader = this.loadingCtrl.create({
+      content: "Chargement...",
     });
+    loader.present();
+
+    // POST QUERY ##################################################
+    let postParams = {
+      email: user,
+      pass: password
+    }
+    const myObjStr = JSON.stringify(postParams);
+    this.http.post("https://dylantxa.fr/waar/", myObjStr)
+      .subscribe(data => {
+        loader.dismiss();
+        console.log("Result : "+data['JSONEXEC']);
+        // ICI ON GÈRE LA CONNEXION :)
+        // console.log(data.JSONEXEC);
+        if(data['JSONEXEC'] == 4) {
+          // COMPTE CLIENT OK 
+          this.nativeStorage.setItem('account', postParams);
+          this.navCtrl.push(TabsPage);
+          //console.log("This is ok");
+        } else {
+          let alert = this.alertCtrl.create({
+            title: 'Erreur',
+            subTitle: 'Votre email ou mot de passe est invalide ! Merci de rééssayer',
+            buttons: ['OK']
+          });
+          alert.present();
+        }
+       }, error => {
+        loader.dismiss();
+        console.log(error);// Error getting the data
+      });
+    
   }
 
-<<<<<<< HEAD:src/pages/home/home.ts
-} 
-=======
-  // Fonction provisoire le temps de faire l'app pour pas se faire chier à se connecter à chaque fois
 
 }
->>>>>>> origin/master:src/pages/login/login.ts
