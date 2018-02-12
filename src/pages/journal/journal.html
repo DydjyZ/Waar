@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button>
+        <!-- bouton option pour accéder aux paramètres du compte -->
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Hey you !</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <!-- Je mets neurones en attendant (ou or, ou ressources, ou bukkake...) parce que faut voir si les niveaux sont utiles (pourquoi pas) mais en tout cas les ressources c'est une info capitale -->
+        <b>Neurones :</b> {{ level }}</ion-col>
+      <ion-col col-6>
+        <b>Exp.</b> {{ exp }}</ion-col>
+    </ion-row>
+  </ion-grid>
+  <h2>Journal de bord</h2>
+
+  <ion-card>
+
+    <ion-card-header>
+      Vous avez été attaqué
+    </ion-card-header>
+    <ion-card-content text-justcenterify>
+<p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
+Vous perdez également <b>36</b> neurones.</p>
+    </ion-card-content>
+  </ion-card>
+    <ion-card>
+        <img src="https://www.fusil-calais.com/1445-large_default/epee-de-frappe-aubusson-de-la-feuillade.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Gertrude vous a attaqué
+            </ion-card-title>
+            <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
+              Vous perdez également <b>36</b> neurones.</p>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="card-background-page">
+      <ion-card>
+          <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K"/>
+          <div class="card-title">Bertrand vous a attaqué</div>
+          <div class="card-subtitle"><p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
+            Vous perdez également <b>36</b> neurones.</p></div>
+        </ion-card>
+        </div>
+
+        <ion-card>
+
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="https://image.noelshack.com/fichiers/2017/24/3/1497456407-icone-one-piece-manga-ico-png-icns-windows-linux-mac.png">
+              </ion-avatar>
+              <h2>Marty McFluffy</h2>
+              <p>vous a vaincu</p>
+            </ion-item>
+          
+            <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K">
+          
+            <ion-card-content>
+                <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
+                  Vous perdez également <b>36</b> neurones.</p>
+            </ion-card-content>
+          
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="hammer"></ion-icon>
+                  <div>Attaquer en retour</div>
+                </button>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <div>Espionner</div>
+                </button>
+              </ion-col>
+              <ion-col center text-center>
+                <ion-note>
+                  11h ago
+                </ion-note>
+              </ion-col>
+            </ion-row>
+          
+          </ion-card>
+
+
+</ion-content>

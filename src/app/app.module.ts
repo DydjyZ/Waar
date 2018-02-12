@@ -3,29 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NativeStorage } from '@ionic-native/native-storage';
-import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { RestProvider } from '../providers/rest/rest';
+
+import { TabsPage } from '../pages/tabs/tabs';
+import { LoginPage } from '../pages/login/login';
+import { ClassementPage } from '../pages/classement/classement';
+import { UpgradePage } from './../pages/upgrade/upgrade';
+import { AttaquePage } from './../pages/attaque/attaque';
+import { JournalPage } from './../pages/journal/journal';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
     TabsPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    AttaquePage,
+    UpgradePage,
+    ClassementPage,
+    JournalPage
   ],
   imports: [
     BrowserModule,
@@ -35,12 +38,13 @@ import { RestProvider } from '../providers/rest/rest';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
     TabsPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    AttaquePage,
+    UpgradePage,
+    ClassementPage,
+    JournalPage
   ],
   providers: [
     StatusBar,
