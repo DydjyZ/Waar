@@ -17,12 +17,13 @@
     <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>
   </ion-item>
 
-  <!-- Remplacer le (click) par :  (tap)="login(user, password)" -->
+  <!-- Todo : ajouter connexion via fb / google -->
+
   <!-- Todo : connexion automatique ? -->
-  <button ion-button full (click)="redirectionProvisoire()">CONNEXION</button>
+  <button ion-button full (click)="login(user, password)">CONNEXION</button>
 
   <!-- Bouton non terminé pour s'inscrire -->
-  <button ion-button full (click)="redirectionProvisoire()">Je ne suis malheureusement pas encore inscrit</button>
+  <button ion-button full (click)="login(user, password)">Je ne suis malheureusement pas encore inscrit</button>
 
 <!-- Rajouter quelque chose qui pousse à s'inscrire (slide ?) sous les boutons -->
 </ion-content>

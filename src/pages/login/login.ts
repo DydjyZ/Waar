@@ -63,8 +63,5 @@ export class LoginPage {
   }
 
   // Fonction provisoire le temps de faire l'app pour pas se faire chier à se connecter à chaque fois
-  redirectionProvisoire() {
-    this.navCtrl.setRoot(TabsPage)
-  }
 
 }
