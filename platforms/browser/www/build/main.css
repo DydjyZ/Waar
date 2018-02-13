@@ -25678,38 +25678,16 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-journal ion-content {
+page-home ion-content {
   text-align: center;
 }
 
-page-journal ion-col {
+page-home ion-col {
   text-align: center;
 }
 
-page-journal ion-grid {
+page-home ion-grid {
   background: #0097e6;
   color: white;
   font-weight: bold;
-}
-
-page-journal .card-background-page ion-card {
-  position: relative;
-  text-align: center;
-}
-
-page-journal .card-background-page .card-title {
-  position: absolute;
-  top: 36%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #fff;
-}
-
-page-journal .card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #fff;
 }

@@ -11,7 +11,7 @@ import { LoginPage } from '../pages/login/login';
 })
 export class MyApp {
   // Pour ne pas se faire chier à se connecter à chaque fois, mettre TabsPage provisoirement
-  rootPage:any = LoginPage;
+  rootPage:any = TabsPage;
 
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
