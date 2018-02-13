@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { RestProvider } from '../../providers/rest/rest';
 
 /**
  * Generated class for the ClassementPage page.
@@ -14,12 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'classement.html',
 })
 export class ClassementPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  userlist: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public Rest: RestProvider, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClassementPage');
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+    });
+    loader.present();
+    this.Rest.UserList().then(data => {
+      console.log("Retour UserList : " + data);
+      this.userlist = data;
+      loader.dismiss();
+    });
   }
 
 }

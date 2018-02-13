@@ -30,6 +30,15 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+
+    // ICI J'AI AJOUTÉ ÇA POUR CONNECTER AUTOMATIQIUEMENT LA PERSONNE ############
+    let postParams = {
+      email: "dylantxa@gmail.com",
+      pass: "z24fufc!"
+    }
+    this.nativeStorage.setItem('account', postParams);
+    this.navCtrl.push(TabsPage);
+    // FIN DE LA CONNEXION AUTOMATIQUE ###########################################
   }
   login(user, password) {
     // CHARGEMENT ##################################################
