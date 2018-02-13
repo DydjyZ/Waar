@@ -13,12 +13,56 @@
         <ion-icon name="options"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>upgrade</ion-title>
+    <ion-title>Améliorer votre cerveau</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div padding>
+    <ion-segment [(ngModel)]="upgrade">
+      <ion-segment-button value="armee">
+        Armée
+      </ion-segment-button>
+      <ion-segment-button value="or">
+        Mine
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="upgrade">
+    <ion-list *ngSwitchCase="'armee'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="http://is3.mzstatic.com/image/thumb/Purple69/v4/25/d6/d5/25d6d517-a390-f133-ddc7-46c04e746003/source/256x256bb.jpg">
+        </ion-thumbnail>
+        <ion-range [(ngModel)]="brightness">
+          <ion-icon range-left small name="sunny"></ion-icon>
+          <ion-icon range-right name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'or'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="http://download.seaicons.com/download/i2247/aha-soft/financial/aha-soft-financial-gold-mine.ico">
+        </ion-thumbnail>
+        <ion-range [(ngModel)]="brightness">
+          <ion-icon range-left small name="sunny"></ion-icon>
+          <ion-icon range-right name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-list>
+  </div>
+
+
+  <button ion-button>Acheter ces ressources</button>
+  <button ion-button>Faire un QCM pour gagner 10 neurones (3 restants)</button>
+
+
 
 </ion-content>
