@@ -1,6 +1,7 @@
 webpackJsonp([2],{
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /***/ 104:
 =======
 /***/ 105:
@@ -109,6 +110,9 @@ var ClassementPage = (function () {
 
 /***/ 107:
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+/***/ 104:
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -122,11 +126,16 @@ var ClassementPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__ = __webpack_require__(47);
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signup_signup__ = __webpack_require__(105);
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(83);
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signup_signup__ = __webpack_require__(105);
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -161,10 +170,13 @@ var SignupPage = (function () {
 <<<<<<< HEAD
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
+<<<<<<< HEAD
 =======
     SignupPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SignupPage');
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
     };
     SignupPage.prototype.signup = function (user, password) {
         var _this = this;
@@ -213,11 +225,19 @@ var SignupPage = (function () {
             selector: 'page-signup',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Inscription à Bukkake</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>\n    <ion-label stacked>Email</ion-label>\n    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label stacked>Mot de passe</ion-label>\n    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>\n  </ion-item>\n  \n  <button ion-button full (tap)="signup(user, password)">CONNEXION</button>\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/signup/signup.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+<<<<<<< HEAD
     ], SignupPage);
     return SignupPage;
 }());
 
 //# sourceMappingURL=signup.js.map
+=======
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 
 /***/ }),
 
@@ -235,11 +255,15 @@ var SignupPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__ = __webpack_require__(47);
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(82);
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signup_signup__ = __webpack_require__(107);
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(82);
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -358,6 +382,7 @@ webpackEmptyAsyncContext.id = 118;
 var map = {
 	"../pages/login/login.module": [
 <<<<<<< HEAD
+<<<<<<< HEAD
 		286,
 =======
 		290,
@@ -366,6 +391,9 @@ var map = {
 	"../pages/signup/signup.module": [
 		289,
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+		286,
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 		1
 	],
 	"../pages/signup/signup.module": [
@@ -390,6 +418,7 @@ module.exports = webpackAsyncContext;
 /***/ }),
 
 /***/ 163:
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -466,6 +495,84 @@ var ContactPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+=======
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutPage = (function () {
+    function AboutPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    AboutPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-about',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/about/about.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+    ], AboutPage);
+    return AboutPage;
+}());
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/contact/contact.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+    ], ContactPage);
+    return ContactPage;
+}());
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rest_rest__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -508,14 +615,19 @@ var HomePage = (function () {
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
 <<<<<<< HEAD
+<<<<<<< HEAD
             selector: 'page-home',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Hey you !</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6><b>Niv.</b> {{ level }}</ion-col>\n      <ion-col col-6><b>Exp.</b> {{ exp }}</ion-col>\n    </ion-row>\n  </ion-grid>\n  <h2>Journal de bord</h2>\n\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/home/home.html"*/
 =======
             selector: 'page-journal',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Hey you !</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-4>\n        <b>Neu. :</b> {{ or }}\n      </ion-col>\n      <ion-col col-4>\n        <!-- Je mets neurones en attendant (ou or, ou ressources, ou bukkake...) parce que faut voir si les niveaux sont utiles (pourquoi pas) mais en tout cas les ressources c\'est une info capitale -->\n        <b>Niv. :</b> {{ level }}\n      </ion-col>\n      <ion-col col-4>\n        <b>Exp. :</b> {{ exp }}\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <h2>Journal de bord</h2>\n\n  <ion-card>\n\n    <ion-card-header>\n      Vous avez été attaqué\n    </ion-card-header>\n    <ion-card-content text-justcenterify>\n<p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\nVous perdez également <b>36</b> neurones.</p>\n    </ion-card-content>\n  </ion-card>\n    <ion-card>\n        <img src="https://www.fusil-calais.com/1445-large_default/epee-de-frappe-aubusson-de-la-feuillade.jpg"/>\n        <ion-card-content>\n          <ion-card-title>\n            Gertrude vous a attaqué\n            </ion-card-title>\n            <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n              Vous perdez également <b>36</b> neurones.</p>\n        </ion-card-content>\n      </ion-card>\n\n      <div class="card-background-page">\n      <ion-card>\n          <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K"/>\n          <div class="card-title">Bertrand vous a attaqué</div>\n          <div class="card-subtitle"><p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n            Vous perdez également <b>36</b> neurones.</p></div>\n        </ion-card>\n        </div>\n\n        <ion-card>\n\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="https://image.noelshack.com/fichiers/2017/24/3/1497456407-icone-one-piece-manga-ico-png-icns-windows-linux-mac.png">\n              </ion-avatar>\n              <h2>Marty McFluffy</h2>\n              <p>vous a vaincu</p>\n            </ion-item>\n          \n            <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K">\n          \n            <ion-card-content>\n                <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n                  Vous perdez également <b>36</b> neurones.</p>\n            </ion-card-content>\n          \n            <ion-row>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="hammer"></ion-icon>\n                  <div>Attaquer en retour</div>\n                </button>\n              </ion-col>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="eye"></ion-icon>\n                  <div>Espionner</div>\n                </button>\n              </ion-col>\n              <ion-col center text-center>\n                <ion-note>\n                  11h ago\n                </ion-note>\n              </ion-col>\n            </ion-row>\n          \n          </ion-card>\n\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+            selector: 'page-home',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Hey you !</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6><b>Niv.</b> {{ level }}</ion-col>\n      <ion-col col-6><b>Exp.</b> {{ exp }}</ion-col>\n    </ion-row>\n  </ion-grid>\n  <h2>Journal de bord</h2>\n\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/home/home.html"*/
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_rest_rest__["a" /* RestProvider */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]])
     ], HomePage);
     return HomePage;
+<<<<<<< HEAD
 }());
 
 //# sourceMappingURL=home.js.map
@@ -580,6 +692,72 @@ var RestProvider = (function () {
 
 /***/ }),
 
+=======
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the RestProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var RestProvider = (function () {
+    function RestProvider(http) {
+        this.http = http;
+        console.log('Hello RestProvider Provider');
+    }
+    RestProvider.prototype.load = function (user, password) {
+        var _this = this;
+        var postParams = {
+            email: user,
+            pass: password
+        };
+        var myObjStr = JSON.stringify(postParams);
+        return new Promise(function (resolve) {
+            _this.http.post("https://dylantxa.fr/waar/info.php", myObjStr)
+                .subscribe(function (data) {
+                _this.data = data;
+                resolve(_this.data);
+            }, function (error) {
+                console.log(error); // Error getting the data
+                return error;
+            });
+        });
+    };
+    RestProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], RestProvider);
+    return RestProvider;
+}());
+
+//# sourceMappingURL=rest.js.map
+
+/***/ }),
+
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 /***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -602,6 +780,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(163);
@@ -615,6 +796,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_rest_rest__ = __webpack_require__(166);
+<<<<<<< HEAD
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(286);
@@ -631,6 +813,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_attaque_attaque__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_journal_journal__ = __webpack_require__(167);
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -672,6 +856,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
 <<<<<<< HEAD
+<<<<<<< HEAD
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
 =======
@@ -681,6 +866,10 @@ var AppModule = (function () {
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/upgrade/upgrade.module#UpgradePageModule', name: 'UpgradePage', segment: 'upgrade', priority: 'low', defaultHistory: [] }
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
                     ]
                 })
             ],
@@ -718,16 +907,22 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(104);
+<<<<<<< HEAD
 =======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(109);
 >>>>>>> 761d605eb2a132629bc15ce2546c652681c05480
+=======
+>>>>>>> parent of 3a7b69a5... Page classement OK, Providers OK (je te montrerais ça mercredi), mise en place côté serveur du back, etc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
