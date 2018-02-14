@@ -13,6 +13,7 @@ export class JournalPage {
   level: any;
   exp: any;
   or: any;
+  userlist: any;
   constructor(public navCtrl: NavController, public Rest: RestProvider, public nativeStorage: NativeStorage) {
 
   }
@@ -35,6 +36,16 @@ export class JournalPage {
            this.level = data['DATA']['level'];
            this.exp = data['DATA']['exp'];
            this.or = data['DATA']['or'];
+         });
+
+         console.log("Loading storage");
+         this.email = data['email'];
+         this.pass = data['pass'];
+         console.log("Loading storage email : " + this.email);
+         console.log("Email : " + this.email);
+         // REQUETTE HTTP POUR RÉCUPÉRER LES INFOS
+         this.Rest.JournalDeBord(this.email, this.pass).then(data => {
+           this.userlist = data;
          });
        });
    }

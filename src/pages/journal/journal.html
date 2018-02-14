@@ -28,37 +28,8 @@
   </ion-grid>
   <h2>Journal de bord</h2>
 
-  <ion-card>
 
-    <ion-card-header>
-      Vous avez été attaqué
-    </ion-card-header>
-    <ion-card-content text-justcenterify>
-<p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
-Vous perdez également <b>36</b> neurones.</p>
-    </ion-card-content>
-  </ion-card>
-    <ion-card>
-        <img src="https://www.fusil-calais.com/1445-large_default/epee-de-frappe-aubusson-de-la-feuillade.jpg"/>
-        <ion-card-content>
-          <ion-card-title>
-            Gertrude vous a attaqué
-            </ion-card-title>
-            <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
-              Vous perdez également <b>36</b> neurones.</p>
-        </ion-card-content>
-      </ion-card>
-
-      <div class="card-background-page">
-      <ion-card>
-          <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K"/>
-          <div class="card-title">Bertrand vous a attaqué</div>
-          <div class="card-subtitle"><p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
-            Vous perdez également <b>36</b> neurones.</p></div>
-        </ion-card>
-        </div>
-
-        <ion-card>
+        <ion-card *ngFor="let item of userlist">
 
             <ion-item>
               <ion-avatar item-start>
@@ -71,8 +42,7 @@ Vous perdez également <b>36</b> neurones.</p>
             <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K">
           
             <ion-card-content>
-                <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>
-                  Vous perdez également <b>36</b> neurones.</p>
+                <p> {{ item.phrase }} </p>
             </ion-card-content>
           
             <ion-row>
@@ -90,7 +60,7 @@ Vous perdez également <b>36</b> neurones.</p>
               </ion-col>
               <ion-col center text-center>
                 <ion-note>
-                  11h ago
+                  {{ item.date | date:"dd/MM/yyyy 'à' HH:mm" }}
                 </ion-note>
               </ion-col>
             </ion-row>
