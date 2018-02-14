@@ -93,7 +93,7 @@ var ClassementPage = (function () {
     };
     ClassementPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-classement',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/classement/classement.html"*/'<!--\n  Generated template for the ClassementPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Classement interneuronal</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Meilleurs joueurs</h2>\n  <ion-list>\n    <ion-item *ngFor="let item of userlist">\n      <ion-thumbnail item-start>\n        <img src="assets/imgs/bg1.png">\n      </ion-thumbnail>\n      <h2>{{ item.email }}</h2>\n      <p>Niveau {{ item.level }}</p>\n    </ion-item>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/classement/classement.html"*/,
+            selector: 'page-classement',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/classement/classement.html"*/'<!--\n  Generated template for the ClassementPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Classement interneuronal</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Meilleurs joueurs</h2>\n  <ion-list>\n    <ion-item *ngFor="let item of userlist">\n      <ion-thumbnail item-start>\n        <img src="assets/imgs/bg1.png">\n      </ion-thumbnail>\n      <h2>{{ item.email }}</h2>\n      <p>Niveau {{ item.level }}</p>\n    </ion-item>\n  </ion-list>\n  <img src="assets/imgs/trophee.png">\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/classement/classement.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_rest_rest__["a" /* RestProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
     ], ClassementPage);
@@ -105,161 +105,6 @@ var ClassementPage = (function () {
 /***/ }),
 
 /***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signup_signup__ = __webpack_require__(109);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var LoginPage = (function () {
-    function LoginPage(navCtrl, loadingCtrl, http, nativeStorage, alertCtrl) {
-        this.navCtrl = navCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.http = http;
-        this.nativeStorage = nativeStorage;
-        this.alertCtrl = alertCtrl;
-        this.signupPage = __WEBPACK_IMPORTED_MODULE_7__signup_signup__["a" /* SignupPage */];
-    }
-    LoginPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad LoginPage');
-        // ICI J'AI AJOUTÉ ÇA POUR CONNECTER AUTOMATIQIUEMENT LA PERSONNE ############
-        var postParams = {
-            email: "dylantxa@gmail.com",
-            pass: "z24fufc!"
-        };
-        this.nativeStorage.setItem('account', postParams);
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__tabs_tabs__["a" /* TabsPage */]);
-        // FIN DE LA CONNEXION AUTOMATIQUE ###########################################
-    };
-    LoginPage.prototype.login = function (user, password) {
-        var _this = this;
-        // CHARGEMENT ##################################################
-        var loader = this.loadingCtrl.create({
-            content: "Chargement...",
-        });
-        loader.present();
-        // POST QUERY ##################################################
-        var postParams = {
-            email: user,
-            pass: password
-        };
-        var myObjStr = JSON.stringify(postParams);
-        this.http.post("https://dylantxa.fr/waar/", myObjStr)
-            .subscribe(function (data) {
-            loader.dismiss();
-            console.log("Result : " + data['JSONEXEC']);
-            // ICI ON GÈRE LA CONNEXION :)
-            // console.log(data.JSONEXEC);
-            if (data['JSONEXEC'] == 4) {
-                // COMPTE CLIENT OK 
-                _this.nativeStorage.setItem('account', postParams);
-                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__tabs_tabs__["a" /* TabsPage */]);
-                //console.log("This is ok");
-            }
-            else {
-                var alert_1 = _this.alertCtrl.create({
-                    title: 'Erreur',
-                    subTitle: 'Votre email ou mot de passe est invalide ! Merci de rééssayer',
-                    buttons: ['OK']
-                });
-                alert_1.present();
-            }
-        }, function (error) {
-            loader.dismiss();
-            console.log(error); // Error getting the data
-        });
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Connexion à Bukkake</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-item>\n    <ion-label stacked>Email</ion-label>\n    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label stacked>Mot de passe</ion-label>\n    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>\n  </ion-item>\n  \n  <button ion-button full (tap)="login(user, password)">CONNEXION</button>\n  \n  <button ion-button full [navPush]="signupPage">INSCRIPTION</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/login/login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the UpgradePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var UpgradePage = (function () {
-    function UpgradePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    UpgradePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad UpgradePage');
-    };
-    UpgradePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-upgrade',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/upgrade/upgrade.html"*/'<!--\n  Generated template for the UpgradePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Améliorer votre cerveau</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <div padding>\n    <ion-segment [(ngModel)]="upgrade">\n      <ion-segment-button value="armee">\n        Armée\n      </ion-segment-button>\n      <ion-segment-button value="or">\n        Mine\n      </ion-segment-button>\n    </ion-segment>\n  </div>\n\n  <div [ngSwitch]="upgrade">\n    <ion-list *ngSwitchCase="\'armee\'">\n      <ion-item>\n        <ion-thumbnail item-start>\n          <img src="http://is3.mzstatic.com/image/thumb/Purple69/v4/25/d6/d5/25d6d517-a390-f133-ddc7-46c04e746003/source/256x256bb.jpg">\n        </ion-thumbnail>\n        <ion-range [(ngModel)]="brightness">\n          <ion-icon range-left small name="sunny"></ion-icon>\n          <ion-icon range-right name="sunny"></ion-icon>\n        </ion-range>\n      </ion-item>\n\n    </ion-list>\n\n    <ion-list *ngSwitchCase="\'or\'">\n      <ion-item>\n        <ion-thumbnail item-start>\n          <img src="http://download.seaicons.com/download/i2247/aha-soft/financial/aha-soft-financial-gold-mine.ico">\n        </ion-thumbnail>\n        <ion-range [(ngModel)]="brightness">\n          <ion-icon range-left small name="sunny"></ion-icon>\n          <ion-icon range-right name="sunny"></ion-icon>\n        </ion-range>\n      </ion-item>\n    </ion-list>\n  </div>\n\n\n  <button ion-button>Acheter ces ressources</button>\n  <button ion-button>Faire un QCM pour gagner 10 neurones (3 restants)</button>\n\n\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/upgrade/upgrade.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], UpgradePage);
-    return UpgradePage;
-}());
-
-//# sourceMappingURL=upgrade.js.map
-
-/***/ }),
-
-/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -362,6 +207,161 @@ var SignupPage = (function () {
 
 /***/ }),
 
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the UpgradePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var UpgradePage = (function () {
+    function UpgradePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    UpgradePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad UpgradePage');
+    };
+    UpgradePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-upgrade',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/upgrade/upgrade.html"*/'<!--\n  Generated template for the UpgradePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Améliorer votre cerveau</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <div padding>\n    <ion-segment [(ngModel)]="upgrade">\n      <ion-segment-button value="armee">\n        Armée\n      </ion-segment-button>\n      <ion-segment-button value="or">\n        Mine\n      </ion-segment-button>\n    </ion-segment>\n  </div>\n\n  <div [ngSwitch]="upgrade">\n    <ion-list *ngSwitchCase="\'armee\'">\n      <ion-item>\n        <ion-thumbnail item-start>\n          <img src="http://is3.mzstatic.com/image/thumb/Purple69/v4/25/d6/d5/25d6d517-a390-f133-ddc7-46c04e746003/source/256x256bb.jpg">\n        </ion-thumbnail>\n        <ion-range [(ngModel)]="brightness">\n          <ion-icon range-left small name="sunny"></ion-icon>\n          <ion-icon range-right name="sunny"></ion-icon>\n        </ion-range>\n      </ion-item>\n\n    </ion-list>\n\n    <ion-list *ngSwitchCase="\'or\'">\n      <ion-item>\n        <ion-thumbnail item-start>\n          <img src="http://download.seaicons.com/download/i2247/aha-soft/financial/aha-soft-financial-gold-mine.ico">\n        </ion-thumbnail>\n        <ion-range [(ngModel)]="brightness">\n          <ion-icon range-left small name="sunny"></ion-icon>\n          <ion-icon range-right name="sunny"></ion-icon>\n        </ion-range>\n      </ion-item>\n    </ion-list>\n  </div>\n\n\n  <button ion-button>Acheter ces ressources</button>\n  <button ion-button>Faire un QCM pour gagner 10 neurones (3 restants)</button>\n\n\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/upgrade/upgrade.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], UpgradePage);
+    return UpgradePage;
+}());
+
+//# sourceMappingURL=upgrade.js.map
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__signup_signup__ = __webpack_require__(107);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LoginPage = (function () {
+    function LoginPage(navCtrl, loadingCtrl, http, nativeStorage, alertCtrl) {
+        this.navCtrl = navCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.http = http;
+        this.nativeStorage = nativeStorage;
+        this.alertCtrl = alertCtrl;
+        this.signupPage = __WEBPACK_IMPORTED_MODULE_7__signup_signup__["a" /* SignupPage */];
+    }
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
+        // ICI J'AI AJOUTÉ ÇA POUR CONNECTER AUTOMATIQIUEMENT LA PERSONNE ############
+        var postParams = {
+            email: "dylantxa@gmail.com",
+            pass: "z24fufc!"
+        };
+        this.nativeStorage.setItem('account', postParams);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__tabs_tabs__["a" /* TabsPage */]);
+        // FIN DE LA CONNEXION AUTOMATIQUE ###########################################
+    };
+    LoginPage.prototype.login = function (user, password) {
+        var _this = this;
+        // CHARGEMENT ##################################################
+        var loader = this.loadingCtrl.create({
+            content: "Chargement...",
+        });
+        loader.present();
+        // POST QUERY ##################################################
+        var postParams = {
+            email: user,
+            pass: password
+        };
+        var myObjStr = JSON.stringify(postParams);
+        this.http.post("https://dylantxa.fr/waar/", myObjStr)
+            .subscribe(function (data) {
+            loader.dismiss();
+            console.log("Result : " + data['JSONEXEC']);
+            // ICI ON GÈRE LA CONNEXION :)
+            // console.log(data.JSONEXEC);
+            if (data['JSONEXEC'] == 4) {
+                // COMPTE CLIENT OK 
+                _this.nativeStorage.setItem('account', postParams);
+                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__tabs_tabs__["a" /* TabsPage */]);
+                //console.log("This is ok");
+            }
+            else {
+                var alert_1 = _this.alertCtrl.create({
+                    title: 'Erreur',
+                    subTitle: 'Votre email ou mot de passe est invalide ! Merci de rééssayer',
+                    buttons: ['OK']
+                });
+                alert_1.present();
+            }
+        }, function (error) {
+            loader.dismiss();
+            console.log(error); // Error getting the data
+        });
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Connexion à Bukkake</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-item>\n    <ion-label stacked>Email</ion-label>\n    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label stacked>Mot de passe</ion-label>\n    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>\n  </ion-item>\n  \n  <button ion-button full (tap)="login(user, password)">CONNEXION</button>\n  \n  <button ion-button full [navPush]="signupPage">INSCRIPTION</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/login/login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
 /***/ 122:
 /***/ (function(module, exports) {
 
@@ -392,11 +392,11 @@ var map = {
 		3
 	],
 	"../pages/login/login.module": [
-		289,
+		290,
 		2
 	],
 	"../pages/signup/signup.module": [
-		290,
+		289,
 		1
 	],
 	"../pages/upgrade/upgrade.module": [
@@ -472,7 +472,7 @@ var JournalPage = (function () {
     };
     JournalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-journal',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Hey you !</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-4>\n        <b>Neu. :</b> {{ level }}\n      </ion-col>\n      <ion-col col-4>\n        <!-- Je mets neurones en attendant (ou or, ou ressources, ou bukkake...) parce que faut voir si les niveaux sont utiles (pourquoi pas) mais en tout cas les ressources c\'est une info capitale -->\n        <b>Niv. :</b> {{ or }}\n      </ion-col>\n      <ion-col col-4>\n        <b>Exp. :</b> {{ exp }}\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <h2>Journal de bord</h2>\n\n  <ion-card>\n\n    <ion-card-header>\n      Vous avez été attaqué\n    </ion-card-header>\n    <ion-card-content text-justcenterify>\n<p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\nVous perdez également <b>36</b> neurones.</p>\n    </ion-card-content>\n  </ion-card>\n    <ion-card>\n        <img src="https://www.fusil-calais.com/1445-large_default/epee-de-frappe-aubusson-de-la-feuillade.jpg"/>\n        <ion-card-content>\n          <ion-card-title>\n            Gertrude vous a attaqué\n            </ion-card-title>\n            <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n              Vous perdez également <b>36</b> neurones.</p>\n        </ion-card-content>\n      </ion-card>\n\n      <div class="card-background-page">\n      <ion-card>\n          <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K"/>\n          <div class="card-title">Bertrand vous a attaqué</div>\n          <div class="card-subtitle"><p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n            Vous perdez également <b>36</b> neurones.</p></div>\n        </ion-card>\n        </div>\n\n        <ion-card>\n\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="https://image.noelshack.com/fichiers/2017/24/3/1497456407-icone-one-piece-manga-ico-png-icns-windows-linux-mac.png">\n              </ion-avatar>\n              <h2>Marty McFluffy</h2>\n              <p>vous a vaincu</p>\n            </ion-item>\n          \n            <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K">\n          \n            <ion-card-content>\n                <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n                  Vous perdez également <b>36</b> neurones.</p>\n            </ion-card-content>\n          \n            <ion-row>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="hammer"></ion-icon>\n                  <div>Attaquer en retour</div>\n                </button>\n              </ion-col>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="eye"></ion-icon>\n                  <div>Espionner</div>\n                </button>\n              </ion-col>\n              <ion-col center text-center>\n                <ion-note>\n                  11h ago\n                </ion-note>\n              </ion-col>\n            </ion-row>\n          \n          </ion-card>\n\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/
+            selector: 'page-journal',template:/*ion-inline-start:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons end>\n      <button ion-button>\n        <!-- bouton option pour accéder aux paramètres du compte -->\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Hey you !</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-4>\n        <b>Neu. :</b> {{ or }}\n      </ion-col>\n      <ion-col col-4>\n        <!-- Je mets neurones en attendant (ou or, ou ressources, ou bukkake...) parce que faut voir si les niveaux sont utiles (pourquoi pas) mais en tout cas les ressources c\'est une info capitale -->\n        <b>Niv. :</b> {{ level }}\n      </ion-col>\n      <ion-col col-4>\n        <b>Exp. :</b> {{ exp }}\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <h2>Journal de bord</h2>\n\n  <ion-card>\n\n    <ion-card-header>\n      Vous avez été attaqué\n    </ion-card-header>\n    <ion-card-content text-justcenterify>\n<p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\nVous perdez également <b>36</b> neurones.</p>\n    </ion-card-content>\n  </ion-card>\n    <ion-card>\n        <img src="https://www.fusil-calais.com/1445-large_default/epee-de-frappe-aubusson-de-la-feuillade.jpg"/>\n        <ion-card-content>\n          <ion-card-title>\n            Gertrude vous a attaqué\n            </ion-card-title>\n            <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n              Vous perdez également <b>36</b> neurones.</p>\n        </ion-card-content>\n      </ion-card>\n\n      <div class="card-background-page">\n      <ion-card>\n          <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K"/>\n          <div class="card-title">Bertrand vous a attaqué</div>\n          <div class="card-subtitle"><p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n            Vous perdez également <b>36</b> neurones.</p></div>\n        </ion-card>\n        </div>\n\n        <ion-card>\n\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="https://image.noelshack.com/fichiers/2017/24/3/1497456407-icone-one-piece-manga-ico-png-icns-windows-linux-mac.png">\n              </ion-avatar>\n              <h2>Marty McFluffy</h2>\n              <p>vous a vaincu</p>\n            </ion-item>\n          \n            <img src="http://nationalinterest.org/files/styles/main_image_on_posts/public/main_images/farley_tank.jpg?itok=ATnES6_K">\n          \n            <ion-card-content>\n                <p><b>Machin</b> vous a détruit <b>2</b> neurosoldats, <b>4</b> neurotanks, <b>0</b> neuropoulpe et <b>1</b> cerveau. <br>\n                  Vous perdez également <b>36</b> neurones.</p>\n            </ion-card-content>\n          \n            <ion-row>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="hammer"></ion-icon>\n                  <div>Attaquer en retour</div>\n                </button>\n              </ion-col>\n              <ion-col>\n                <button ion-button icon-left clear small>\n                  <ion-icon name="eye"></ion-icon>\n                  <div>Espionner</div>\n                </button>\n              </ion-col>\n              <ion-col center text-center>\n                <ion-note>\n                  11h ago\n                </ion-note>\n              </ion-col>\n            </ion-row>\n          \n          </ion-card>\n\n\n</ion-content>'/*ion-inline-end:"/Users/dylantxa/Desktop/Ionic Projets/Waar2/src/pages/journal/journal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_rest_rest__["a" /* RestProvider */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]])
     ], JournalPage);
@@ -510,10 +510,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_native_storage__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_signup_signup__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_signup_signup__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_rest_rest__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_tabs_tabs__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_classement_classement__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_upgrade_upgrade__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_attaque_attaque__ = __webpack_require__(105);
@@ -562,8 +562,8 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/attaque/attaque.module#AttaquePageModule', name: 'AttaquePage', segment: 'attaque', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/classement/classement.module#ClassementPageModule', name: 'ClassementPage', segment: 'classement', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/upgrade/upgrade.module#UpgradePageModule', name: 'UpgradePage', segment: 'upgrade', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -605,7 +605,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
