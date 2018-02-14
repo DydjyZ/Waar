@@ -22,15 +22,13 @@
 <ion-content padding>
   <h2>Meilleurs joueurs</h2>
   <ion-list>
-    <ion-item>Jean</ion-item>
-    <ion-item>Bertrand</ion-item>
-    <ion-item>Eude</ion-item>
-    <ion-item>Simon</ion-item>
-    <ion-item>Sineck</ion-item>
-    <ion-item>Bukkake</ion-item>
-    <ion-item>Fallait bien que ça rrive</ion-item>
-    <ion-item>Tout du moinds que ça sorte</ion-item>
+    <ion-item *ngFor="let item of userlist">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/bg1.png">
+      </ion-thumbnail>
+      <h2> {{ item.email }}</h2>
+      <p>Niveau {{ item.level }}</p>
+    </ion-item>
   </ion-list>
-  <img src="assets/imgs/trophee.png">
 
 </ion-content>
